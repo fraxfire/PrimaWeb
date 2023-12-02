@@ -1,0 +1,22 @@
+@model Prenotazione;
+@{
+    ViewData["Titla"] = "Prenota";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Prenota</h1>
+
+    <form class="m-2" method="post" asp-action="Prenota">
+        <div class="form-group">
+            <label asp-for="Nome">Il tuo nome:</label>
+            <input asp-for="Nome" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email">La tua email:</label>
+            <input asp-for="Email" class="form-control">
+        </div>
+
+        <button id="bottonePrenotazione" class="btn btn-primary" onclick="SubmitP()">Prenota</button>
+    </form>
+</div>
